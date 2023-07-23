@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aira Aguado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="mystyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <!---header site-->
+        <div id="header">
+            <div class="container" data-aos="fade-top">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class='bx bx-x' onclick="closemenu()"></i>
+                    </ul>
+                    <i class='bx bx-menu' onclick="openmenu()"></i>
+                </nav>
+
+                <!---home site-->
+
+                <div class="header-text" data-aos="fade-left">
+                    <p> Hi there, I'm</p>
+                    <h1>ROBELLE AIRA AGUADO</h1>
+                    <h3>A third year student who aspires to be a Web Designer/Developer.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!---about site-->
+
+        <div id="about">
+            <div class="container" >
+                <div class="row">
+                    <div class="about-col-1" data-aos="fade-left">
+                        <img src="images/aira2.jpg">
+                    </div>
+                    <div class="about-col-2" data-aos="fade-right">
+                        <h1 class="sub-title"><span>ABOUT ME</span></h1>
+                        <P>I am Robelle Aira E. Aguado, a third year Bachelor of Science in Information Technology
+                            student from Phinma University of Pangasinan.
+                        </P><br>
+                        <p>Driven by my passion as a student and aspiring web developer, I wholeheartedly dedicate
+                            myself to continuous improvement in my coding skills. My goal is to create captivating web 
+                            experiences that not only impress but also leave a lasting positive impact on the lives of the 
+                            users who interact with them. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills section -->
+
+        <div id="skills">
+            <div class="container">
+                <div class="main-text" data-aos="fade-down">
+                    <span>Technical Skills and Education</span>
+                   
+                </div>
+                
+                <div class="skill-main">
+                    <div class="left" data-aos="fade-left">
+                        <h3>Tehnical Skills</h3>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>HTML</p>
+                                <p> 65% </p>
+                            </div>
+                            <div class="bar">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p> CSS </p>
+                                <p> 60% </p>
+                            </div>
+                            <div class="bar">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>JAVASCRIPT</p>
+                                <p>30%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="javascript"></span>
+                            </div> 
+                        </div>
+                        <div class="images" >
+                            <img src="images/1.jpg"  class="html" data-aos="fade-left">
+                            <img src="images/2.jpg"  class="css" data-aos="fade-left">
+                            <img src="images/3.jpg"  class="js" data-aos="fade-left">
+                        </div>
+                    </div>
+
+                    <div class="right" data-aos="fade-right">
+                        <h3>Education</h3>
+                        <div class="right-container" >
+                            <img src="images/play1.png">
+                            <div class="text-box">
+                                <h2>2021 -- current</h2>
+                                <p>Currently studing at Phinma University of Pangasinan taking the courseof BSIT</p>
+                            </div>
+                        </div>
+
+                        <div class="right-container">
+                            <img src="images/play2.png">
+                            <div class="text-box">
+                                <h2>2015 -- 2021</h2>
+                                <p>Graduated High School at St. John Cathedral School</p>
+                            </div>
+                        </div>
+                        <div class="right-container">
+                            <img src="images/play3.png">
+                            <div class="text-box"  >
+                                <h2>2010 -- 2015</h2>
+                                <p>Grauated Elementary School at West Central Elemtary School II</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+        
+            
+        
+
+
+    </body>
+</html>
