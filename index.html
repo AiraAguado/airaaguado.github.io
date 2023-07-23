@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link href="mystyle.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/04dbc4a8ee.js" crossorigin="anonymous"> </script>
     </head>
     <body>
 
@@ -133,6 +134,38 @@
             </div>
         </div>
 
+        <!-- contact section -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left" data-aos="fade-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i> aguadoaira858@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 09457323835</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100075725247743"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/_raexiii/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/AiraAguado"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right" data-aos="fade-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 | Robelle Aira E. Aguado | All rights reserved. </p>
+            </div>
+        </div>
+
+
         <script>
 
             var sidemenu = document.getElementById("sidemenu");
@@ -152,7 +185,24 @@
             </script>
         
             
-        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxdnj7DdYT3tdHtW0MCrLoFk3yy9nB7ybQy5_YcDteMjUxbSqAF3Du3UAPNG0iMU7a4UA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        message.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
 
     </body>

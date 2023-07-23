@@ -23,7 +23,9 @@
     0 0 50px rgba(18, 184, 255, 0.3),
     0 0 60px rgba(18, 184, 255, 0.3),
     0 0 70px rgba(18, 184, 255, 0.3),
-    0 0 80px rgba(18, 184, 255, 0.3);
+    0 0 80px rgba(18, 184, 255, 0.3),
+    0 0 90px rgba(18, 184, 255, 0.3),
+    0 0 100px rgba(18, 184, 255, 0.3);
 }
 
 html{
@@ -321,12 +323,13 @@ h2 {
     width: 150px;
     margin-right: 18px;
     border-radius: 15px;
-    align-items: center;
     transition-duration: 0.5s;
+    position: relative;
 }
 
 .skill-main .left img:hover{
     box-shadow: var(--font-neon-text-shadow);
+    
 }
 
 
@@ -402,6 +405,97 @@ h2 {
 .text-box p{
     font-weight: 200;
     font-size: 18px;
+}
+
+/* Contact Section css -----------*/
+
+#contact{
+    padding-top: 100px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: var(--hover-color);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: var(--hover-color);
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #33348500;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: var(--hover-color);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: var(--font-neon-text-shadow);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--second-bg-color);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;;
+    background: rgba(67, 78, 88, 0.468);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#msg{
+    color: #66e5f1ae ;
+    margin-top: -40px;
+    display: block;
+    text-align: center;
+    
 }
 
 /* --------------css for small screens----------*/
@@ -481,4 +575,3 @@ nav .bx{
     }
 }
 
-/* --------------css for wide screens----------*/
